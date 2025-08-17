@@ -1,0 +1,14 @@
+[package]
+name = "hn"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json", "blocking", "cookies"] }
+tokio = { version= "1", features = ["full"] }
+colored = "3.0.0"
+indicatif = "0.18.0"
+rayon = "1.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+futures = "0.3.31"
